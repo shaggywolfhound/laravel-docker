@@ -82,7 +82,7 @@ RUN composer global require "laravel/installer"
 RUN echo "export PATH=~/.composer/vendor/bin:\$PATH" >> ~/.bashrc
 RUN source ~/.bashrc
 
-##setup binance
+##setup directory
 RUN mkdir /var/www/project
 
 CMD ["php-fpm"]

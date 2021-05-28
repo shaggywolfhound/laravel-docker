@@ -45,7 +45,7 @@ services:
         volumes:
             - ./laravel:/var/www/project
             - ./build/laravel/php.ini:/usr/local/etc/php/php.ini
-        working_dir: /var/www/binance
+        working_dir: /var/www/project
         depends_on:
             - sql
             - web
