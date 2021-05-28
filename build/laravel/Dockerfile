@@ -84,5 +84,7 @@ RUN source ~/.bashrc
 
 ##setup directory
 RUN mkdir /var/www/project
+##start project
+RUN composer create-project laravel/laravel .
 
 CMD ["php-fpm"]
